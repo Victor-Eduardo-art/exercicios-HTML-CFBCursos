@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* ANIMAÇÕES */
+  [data-anima] {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  [data-anima='esquerda'] {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  [data-anima='centro'] {
+    transform: translate3d(0, 50px, 0);
+  }
+
+  [data-anima='direita'] {
+    transform: translate3d(50px, 0, 0);
+  }
+
+  [data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+}
+
+header nav ul {
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #888;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  padding: 2px 10px;
+  display: inline-block;
+}
+
+header nav ul li a:hover {
+  color: #b6dbf1;
+}
+
+section {
+  padding: 60px 0px;
+  background-color: white;
+  width: 100%;
+  height: 500px;
+}
+
+section:nth-child(even) {
+  background-color: #3c4f60;
+}
+
+article {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  padding-top: 60px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.borda0 {
+  border: none;
+}
+
+.borda1 {
+  border: 1px solid #000;
+}
+
+.flexivel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Parallax */
+  .parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale(1.08);
+  }
+
+  .img1 {
+    background-image: url('../imgs/p1.png');
+  }
+
+  .img2 {
+    background-image: url('../imgs/p2.png');
+  }
+
+/* CURSOS */
+.conteiner-curso {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mini {
+  cursor: pointer;
+  padding: 15px 5px;
+  width: 49%;
+}
+
+/* JANELA MODAL */
+
+.mostrarJanelaModal {
+  display: block;
+}
+
+.esconderJanelaModal {
+  display: none;
+}
+
+.janelaModal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btnFechar {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.imgModal {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  display: block;
+}
+
+.descricao {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  max-width: 700px;
+  color: #ccc;
+  padding: 10px 0px;
+  height: 150px;
+}

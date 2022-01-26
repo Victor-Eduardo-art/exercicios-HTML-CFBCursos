@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+   box-sizing: content-box;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs {
+   border: 1px solid #ccc;
+   overflow: hidden;
+   background-color: #f1f1f1;
+}
+
+.btnTabs {
+   background-color: rgba(204, 204, 204, 0);
+   transition: all 0.3s;
+   font-size: 17px;
+   padding: 14px 17px;
+   float: left;
+   cursor: pointer;
+}
+
+.btnTabs:hover {
+   background-color: rgba(0, 0, 0, 0.075);
+}
+
+.ativo {
+   background-color: rgba(0, 0, 0, 0.075);
+}
+
+.conteudoTabs {
+   display: none;
+   padding: 6px 12px;
+   border: 1px solid #ccc;
+   border-top: none;
+}
+
+h3 {
+   margin: 10px 0px;
+}
+
+.btnFechar {
+   float: right;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.btnFechar:hover {
+   color: #F00;
+}

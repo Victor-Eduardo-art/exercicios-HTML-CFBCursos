@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+   background-color: rgb(88, 88, 88);
+}
+
+.menu {
+   background-color: #eee;
+   padding: 10px 0px;
+   max-width: 300px;
+   height: 100%;
+}
+
+.b-acordeon {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   transition: all 0.5s;
+   font-size: 15px;
+   width: 100%;
+   text-align: left;
+   padding: 18px;
+}
+
+.painel {
+   background-color: #fff;
+   padding: 0px 18px;
+   max-height: 0px;
+   transition: max-height 0.3s ease-out;
+   overflow: hidden;
+   max-width: 300px;
+}
+
+.ativo, .b-acordeon:hover {
+   background-color: #d6d6d6;
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+   background-color: #ccc;
+}
+
+.menu {
+   max-width: 150px;
+   background-color: #242424;
+   position: fixed;
+   top: 0px;
+   left: -97px;
+   display: flex;
+   transition: all 0.5s ease;
+}
+
+.menu a {
+   padding: 25px;
+   text-align: center;
+   display: block;
+   transition: all 0.5s ease;
+}
+
+.menu img {
+   width: 70%;
+}
+
+.menu a:hover {
+   background-color: rgb(107, 0, 0);
+}
+
+.ativo {
+   background-color: #a00;
+}
+
+.barra {
+   background-color: #fff;
+   width: 40px;
+   height: 4px;
+   margin: 7.5px;
+}
+
+.btnMenu {
+   cursor: pointer;
+}
+
+.menuAberto {
+   left: 0px;
+}
