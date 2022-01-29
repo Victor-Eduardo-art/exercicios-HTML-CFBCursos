@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+   background-color: #ccc;
+}
+
+.menu a {
+   box-sizing: content-box;
+   position: absolute;
+   left: -105px;
+   border-radius: 0px 15px 15px 0px;
+   transition: all 0.2s;
+   padding: 15px 20px;
+   width: 100px;
+   color: white;
+   font-size: 20px;
+}
+
+.menu a:hover {
+   left: 0px;
+}
+
+#itemCanal {
+   top: 20px;
+   background-color: rgb(192, 0, 0);
+}
+
+#itemInstagram {
+   top: 80px;
+   background-color: rgb(192, 0, 166);
+}
+
+#itemFacebook {
+   top: 140px;
+   background-color: rgb(0, 51, 192);
+}
+
+.menu a:hover {
+
+}
+
+section {
+   margin-left: 70px;
+}

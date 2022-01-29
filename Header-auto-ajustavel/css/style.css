@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body {
+   background-color: #ccc;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f1f1f1;
+   overflow: hidden;
+   padding: 90px 10px;
+   width: 100%;
+   position: fixed;
+   top: 0px;
+   transition: all 0.5s;
+}
+
+header .logo {
+   color: black;
+   font-size: 35px;
+   font-weight: bold;
+   transition: all 0.5s;
+}
+
+header nav {
+   text-align: center;
+}
+
+header li {
+   display: inline;
+   text-decoration: none;
+}
+
+header a {
+   color: black;
+   border-radius: 4px;
+   padding: 12px;
+   font-size: 18px;
+   transition: all 0.3s;
+}
+
+header li a:hover {
+   background-color: #ddd;
+}
+
+.ativo {
+   color: white;
+   background-color: rgb(33, 121, 221);
+}
+
+.ativo:hover {
+   background-color: rgb(33, 121, 221);
+}
+
+.diminuirMenu {
+   padding: 30px 10px;
+
+}
+
+.diminuirMenu .logo {
+   font-size: 25px;
+}
+
+main {
+   margin-top: 210px;
+   padding: 15px 15px 2500px;
+   font-size: 30px;
+}
+
+main p {
+   display: block;
+   margin: 50px 0px;
+}
+
+.ativo {
+
+}

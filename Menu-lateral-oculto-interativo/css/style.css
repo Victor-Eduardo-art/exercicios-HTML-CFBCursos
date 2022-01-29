@@ -1,6 +1,80 @@
 @charset "UTF-8";
 
 body {
-   padding: 10px 20px;
    background-color: #ccc;
+}
+
+.icone-menu-2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 25px;
+   height: 20px;
+   cursor: pointer;
+   margin-bottom: 15px;
+}
+
+.item-icone {
+   background-color: black;
+   width: 100%;
+   height: 3px;
+   display: block;
+}
+
+.menuOculto {
+   z-index: 10;
+   height: 100%;
+   background-color: #111;
+   width: 0px;
+   position: fixed;
+   padding-top: 60px;
+   transition: all 0.5s;
+   font-family: Arial, Helvetica, sans-serif;
+   top: 0px;
+   left: 0px;
+   overflow: hidden;
+}
+
+.mostraMenu {
+   width: 250px;
+}
+
+.margin-left-Principal {
+   margin-left: 250px;
+}
+
+.menuOculto a {
+   color: #888;
+   padding: 8px 8px 8px 32px;
+   font-size: 25px;
+   transition: all 0.3px;
+   display: block;
+   text-decoration: none;
+}
+
+.menuOculto a:hover {
+   color: #fff;
+}
+
+.btnFechar {
+   position: absolute;
+   top: 0px;
+   right: 25px;
+   margin-left: 50px;
+   font-size: 36px;
+}
+
+.principal {
+   padding: 16px;
+   transition: margin-left 0.5s;
+}
+
+@media screen and(max-height: 450px) {
+   .menuOculto {
+      padding-top: 15px;
+   }
+
+   .menuOculto a {
+      font-size: 18px;
+   }
 }
