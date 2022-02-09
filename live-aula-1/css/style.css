@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* classes auxiliares */
+
+   .borda1 {
+      border: 1px solid blue;
+   }
+
+   .borda2 {
+      border: 1px solid red;
+   }
+
+header {
+   background-color: #239;
+   display: flex;
+   flex-direction: column;
+   padding: 0px 10px;
+}
+
+.conteudo-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: white;
+   width: 100%;
+   padding: 10px 0px;
+}
+
+.centro {
+   /* flex-grow: 1; ou*/
+   width: 100%;
+   text-align: center;
+}
+
+.menu {
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+}
+
+.menu a {
+   color: white;
+   width: 100%;
+   padding: 15px 0px;
+}
+
+.menu a:hover {
+   background-color: rgba(0, 0, 0, 0.589);
+}
