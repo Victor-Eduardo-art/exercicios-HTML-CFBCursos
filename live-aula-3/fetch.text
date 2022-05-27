@@ -1,0 +1,38 @@
+fetch
+
+fetch(/*aqui você tem colocar a url da API que você quer acessar/enviar dados ex:*/ 'https://API-teste.victor-eduardo.repl.co')
+   .then((/*aqui você precisa colocar um parâmetro para receber a resposta da requisição ex:*/ res) => {
+      // na última linha dessa função você deve retornar o parâmetro que contém os dados da resposta no formato que você quer manipula-los como por exemplo JSON, mas antes de retornar o parâmetro você pode fazer uma verificação pra ver se deu tudo certo ou não ex:
+
+      if (res.status == 200) {
+         console.log("Dados da API-teste obtidos com sucesso")
+      } else {
+         if (res.status == 404) {
+            console.log("Erro ao achar a API")
+            return new Error("Erro ao achar a API")
+         }
+      }
+      // agora é só retornar os dados no formato que você quer
+      return res.json()
+   })
+   .then((/*aqui você deve colocar oo mesmo parâmetro que você colocou no then anterior ex:*/ res) => {
+      // agora é só manipular os dados da API do jeito que você quiser ex:
+
+      .then((res) => {
+         res.map((obj) => {
+            const article = document.createElement("article")
+            const h1 = document.createElement("h1")
+            const p = document.createElement("p")
+
+            h1.innerHTML = obj.titulo
+            p.innerHTML = obj.paragrafo
+
+            article.appendChild(h1)
+            article.appendChild(p)
+            containerArtigos.appendChild(article)
+         })
+      })
+   })
+   .catch()
+
+"esse comando ser para fazer requisições assíncronas para um servidor (que pode ser uma API), com esse comando é possível acessar e enviar dados, esse comando é muito útil para conectar o front-end com o back-end"
